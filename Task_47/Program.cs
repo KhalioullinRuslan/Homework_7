@@ -34,8 +34,8 @@ int EnterNumber(string meseg)
     return number;
 }
 
-int rows = EnterNumber("Введите количество столбцов: ");
-int columns = EnterNumber("введите количестко строк: ");
-double [,] matrix = new double [rows, columns];
+int columns = EnterNumber("Введите количество строк: ");
+int rows    = EnterNumber("введите количестко столбцов: ");
+double [,] matrix = new double [columns, rows];
 FillMatrixWithRundomNumbers(matrix);
 PrintMatrix(matrix);
